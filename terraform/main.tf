@@ -190,8 +190,10 @@ resource "aws_instance" "inference_vm" {
   ami           = "ami-0f58b397bc5c1f2e8"
   instance_type = "t3.small"
 
-  subnet_id = aws_subnet.private_subnet.id
+  subnet_id = aws_subnet.public_subnet.id
 
+  associate_public_ip_address = true
+  
   vpc_security_group_ids = [
     aws_security_group.main_sg.id
   ]
