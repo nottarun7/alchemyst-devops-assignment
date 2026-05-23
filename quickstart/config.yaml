@@ -1,5 +1,6 @@
 # iii engine configuration
 # Docs: https://iii.dev/docs/how-to/configure-engine
+
 workers:
   - name: iii-observability
     config:
@@ -18,3 +19,8 @@ workers:
     config:
       adapter:
         name: builtin
+
+  - name: iii-http
+    config:
+      port: 3111
+      host: 0.0.0.0

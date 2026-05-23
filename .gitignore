@@ -1,7 +1,6 @@
-.terraform/
-*.tfstate
-*.tfstate.*
 *.pem
+*.tfstate
+*.tfstate.backup
+.terraform/
+venv/
 node_modules/
-__pycache__/
-.env
